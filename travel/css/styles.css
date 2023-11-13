@@ -1,0 +1,286 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper {
+    width: 940px;
+    margin: 160px auto 20px auto;
+}
+
+header {
+    /* height: 200px; */
+    /* background: yellow; */
+    /* padding-bottom: 16px; */
+    background-color: #fff;
+    padding-top: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* Declare width for header if you are having the position be fixed on the page and scrool down with the content */
+    /* You also need to delcare the position of the header or else it'll just float on the page as well as add extra margins on the wrapper */
+}
+
+.inner-header {
+    /* background: orange; */
+    width: 940px;
+    margin: 0 auto;
+}
+
+.social {
+    position: fixed;
+    top: 300px;
+    right: 5px;
+    list-style-type: none;
+}
+
+.social li {
+    margin-bottom: 8px;
+}
+
+#primary {
+    height: 50px;
+    background: #eee;
+    line-height: 50px;
+}
+
+#primary ul {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#primary li {
+    list-style-type: none;
+    float: left;
+    width: 20%; 
+    /* To properly space items, have 100% divide by # of <li> */
+    text-align: center;
+}
+
+#primary a{
+    text-decoration: none;
+    color: #D9961A;
+    display: block;
+    /* place display:block in a so that there is a larger place to click the link rather than in a:hover */
+}
+
+#primary a:hover {
+    color: #fff;
+    background: #79A5D3;
+}
+
+/*Means if youre on a certain page, the # of the list item anchor is affected */
+.home #primary li:nth-child(1) a, 
+.about #primary li:nth-child(2) a,
+.tours #primary li:nth-child(3) a,
+.promos #primary li:nth-child(4) a,
+.contact #primary li:nth-child(5) a {
+    color: #fff;
+    background: #79A5D3;   
+    /* font-weight:bold;  */
+}
+
+/* #hero {
+    /* height:300px; */
+    /* background: red; 
+} */
+
+
+/* #hero img {
+    /* BAD WAY TO DO THIS 
+    width: 940px;
+} */
+
+
+main {
+    width: 580px;
+    /* height: 400px; */
+    /* background: lightgreen; */
+    float:left;
+    margin: 23px 0 0 0;
+}
+
+aside {
+    width: 340px;
+    /* height: 350px; */
+    background: #D9961A;
+    float: right;
+    margin: 20px 0 0 0;
+    padding: 15px; /*b/c padding is 15px, we have to reduce the width of the aside by 30px */
+}
+
+.row {
+    clear: both;
+    margin-bottom: 20px;
+    /* Use overflow:hidden to allow margin */
+    overflow: hidden;
+}
+
+.third {
+    width: 300px;
+    /* REMOVE HEIGHTS WHEN YOU PUT CONTENT IN DIV */
+    /* height: 300px; */
+    /* background: pink; */
+    float: left;
+    margin-right: 20px;   
+}
+
+.third:last-of-type {
+    margin-right:0;
+}
+
+.col-8 {
+    width: 460px;
+    /* height:400px; */
+    /* background: yellow; */
+    float:left;
+}
+
+.col-8:last-of-type {
+    float: right;
+}
+
+figure {
+    margin-bottom: 15px;
+}
+
+figure img {
+    margin: 0 auto;
+}
+
+figcaption {
+    background: black;
+    color: white;
+    font-size: 0.875em;
+    padding: 8px;
+    font-style:italic;
+}
+
+.about figcaption {
+    text-align:center;
+    background: none;
+    padding: 8px 0;
+}
+
+footer {
+    height: 50px;
+    line-height:50px;
+    /* background: #666; */
+    clear: both;
+    font-size:.9em;
+    color: #666;
+}
+
+footer li {
+    list-style-type: none;
+    float:left;
+    margin-right:30px;
+}
+
+footer a {
+    color: #666;
+}
+
+img#logo {
+    display: inline;
+    margin-bottom: 16px;
+}
+
+/* can also do footer img for all images in the footer */
+.icon {
+    width: 35px;
+    margin-top: 3px;
+}
+
+
+img {
+    /* BETTER WAY TO RESIZE ALL PHOTOS */
+    /* This will make sure any image will fit 100% in its container/section */
+    max-width: 100%;
+    display: block;
+}
+
+/* This is for when there is an image and a paragraph after */
+/* This only styles the p tag */
+img + p {
+    margin: 15px 0 20px 0;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    font-weight: 200;
+    font-size: 2.44em;
+}
+
+h1, h2, h3 {
+    margin: 0 0 8px 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.2;
+    color: #D9961A;
+
+}
+
+h2 {
+    color: #555;
+    font-size: 2em;
+}
+
+h3 {
+    color: #fff;
+    font-size: 1.78em;
+    font-weight: 200;
+    /* text-transform: uppercase; */
+}
+
+hr {
+    clear: both;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+aside p {
+    font-size:0.9em;
+}
+
+.third h3, .col-8 h3 {
+    color: #555;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.third img + h3, .col-8 img + h3 {
+    margin: 10px 0 8px 0;
+}
+
+.third p {
+    font-size: .9em;
+    text-align: center;
+}
+
+.col-8 p, .col-8 h3 {
+    text-align: left;
+}
+
+span {
+    display:block;
+    text-align: center;
+    font-style:italic;
+
+}
+
+span a {
+    color: #79A5D3;
+    /* font-weight: bold; */
+    font-size: 1.2em;
+}

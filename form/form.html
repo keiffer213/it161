@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Excercise</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <!-- Form will not work locally, needs to be uploaded to server -->
+    <!-- form handler that we will be downloading is using PHP (hypertext preprocessor) which only work on a server, not locally  -->
+<form action="formhandler.php" method="post">
+    <!-- Post will not display what you type into the url while get will -->
+    <fieldset>
+        <label>Name</label>
+        <input type="text" name="name">
+        <label>Email</label>
+        <input type="email" name="email" >
+
+        <label>Gender</label>
+        <ul>
+        <li><input type="radio" name="gender" value="female">Female</li>
+        <li><input type="radio" name="gender" value="Male">Male</li>
+        <li><input type="radio" name="gender" value="Other">Other</li>
+        </ul>
+
+        <label>Favorite Wines</label>
+        <!-- Checkbox is known as an array in php, so add brackets after the names so php knows if you click more than 1 -->
+        <ul>
+           <li><input type="checkbox" name="wines[]" value="cab">Cabernet</li> 
+           <li><input type="checkbox" name="wines[]" value="merlot">Merlot</li> 
+           <li><input type="checkbox" name="wines[]" value="malbec">Malbec</li> 
+           <li><input type="checkbox" name="wines[]" value="syrah">Syrah</li> 
+        </ul>
+
+        <label>Regions</label>
+        <select name="regions">
+            <option value="">Select One</option>
+            <!-- leave the first one empty cause you don't want anyone to choose "select one" -->
+            <option value="nw">Northwest</option>
+            <option value="sw">Southwest</option>
+            <option value="mw">Midwest</option>
+            <option value="so">South</option>
+            <option value="ne">Northeast</option>
+        </select>
+
+        <label>Comments</label>
+        <textarea name="comments"></textarea>
+        <input type="submit" name="submit" value="Send it!">
+
+
+    </fieldset>
+
+
+</form>
+
+
+</body>
+</html>

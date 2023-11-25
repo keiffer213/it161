@@ -1,0 +1,137 @@
+/* Styles for my form excerise */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* I am adding padding to my body for demonstation purposes only. REMOVE THE PADDING once you start working on your homework!! */
+/* body { 
+    /* background: #eee; */
+    /* padding: 100px; 
+ } */ 
+
+#wrapper {
+    margin: 30px auto;
+    width: 940px;
+}
+
+main {
+    width: 580px;
+    float: left;
+}
+
+aside {
+    margin-top: 22px;
+    width: 340px;
+    float: right;
+}
+
+aside h3 {
+    font-size: 1.7em;
+    margin-bottom: 5px;
+}
+
+aside p {
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+
+footer {
+    clear: both;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    /* justify-content: center; */
+    border-top: 1px dotted #800;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer li {
+    margin: 0 10px;
+    list-style-type: none;
+}
+
+/* Form Styles */
+form {
+    max-width: 580px;
+    margin-bottom: 20px;
+}
+
+fieldset {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px dotted #800;
+}
+
+
+legend {
+    font-size: 1.3em;
+    font-style: italic;
+    padding: 0 5px;
+}
+
+/* b/c label is an inline element, you can use block */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+input {
+    margin-bottom: 10px;
+    height: 30px;
+    width: 100%;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    height: auto;
+    width: auto;
+    margin-right: 3px;
+    margin-bottom: 3px;
+}
+
+form ul {
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+form li {
+    list-style-type: none;
+}
+
+/* attribute selector uses brackets */
+input[type="submit"] {
+    width: auto; /*if auto, will only as big as the content*/
+}
+
+select {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 110px;
+    margin-bottom: 10px;
+}
+
+.aside {
+    width: 100%;
+}
+
+
+h1 {
+    color: #800;
+    font-size: 3em;
+    margin-bottom: 12px;
+}
+
+p a {
+    color: #800;
+    font-size: 1.3em;
+}

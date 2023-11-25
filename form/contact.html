@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Homework</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+</head>
+
+
+<body>
+<div id="wrapper">
+<header>
+    <a href="contact.html"><img id="logo" src="images/logo.jpg" alt="logo"></a>
+</header>
+
+<main>
+<h1>Contact Us Today!</h1>
+<form action="formhandler.php" method="post">
+    <!-- Post will not display what you type into the url while get will -->
+    <fieldset>
+        <legend>Contact Keiffer</legend>
+
+        <label>Name</label>
+        <input type="text" name="name">
+        <label>Email</label>
+        <input type="email" name="email" >
+
+        <label>Gender</label>
+        <ul>
+        <li><input type="radio" name="gender" value="female">Female</li>
+        <li><input type="radio" name="gender" value="male">Male</li>
+        <li><input type="radio" name="gender" value="other">Other</li>
+        </ul>
+
+        <label>Favorite Wines</label>
+        <!-- Checkbox is known as an array in php, so add brackets after the names so php knows if you click more than 1 -->
+        <ul>
+           <li><input type="checkbox" name="wines[]" value="cabernet">Cabernet</li> 
+           <li><input type="checkbox" name="wines[]" value="merlot">Merlot</li> 
+           <li><input type="checkbox" name="wines[]" value="malbec">Malbec</li> 
+           <li><input type="checkbox" name="wines[]" value="syrah">Syrah</li> 
+        </ul>
+
+        <label>Regions</label>
+        <select name="regions">
+            <option value="">Select One</option>
+            <!-- leave the first one empty cause you don't want anyone to choose "select one" -->
+            <option value="nw">Northwest</option>
+            <option value="sw">Southwest</option>
+            <option value="mw">Midwest</option>
+            <option value="so">South</option>
+            <option value="ne">Northeast</option>
+            <option value="east">Eastcoast</option>
+        </select>
+
+        <label>Comments</label>
+        <textarea name="comments"></textarea>
+        <input type="submit" name="submit" value="Send it!">
+
+        <p><a href="">Reset</a></p>
+
+    </fieldset>
+
+
+</form>
+</main>
+
+<aside>
+    <h3>This is my wonderful aside</h3>
+    <p>Quisque dapibus vestibulum nibh cursus mattis. Pellentesque sed nisl ac nulla dictum finibus eget id justo. Vestibulum pellentesque, diam ac bibendum ultrices, eros nunc ornare dui, sit amet aliquam nulla neque in lorem. Praesent feugiat malesuada bibendum. Aenean quis tristique nisl. Pellentesque quis metus in est sodales bibendum.</p>
+    <img class="aside" src="images/wine-barrels.jpg" alt="wine barrels">
+</aside>
+
+<footer>
+    <ul>
+        <li>Copyright &copy; 2023</li>
+        <li>All Rights Reserved</li>
+        <li><a href="../index.html">Web Design By Keiffer</a></li>
+        <li><a href="https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fcentral.mystudentswa.com%2Fkeifferta%2Fit161%2Fform%2Fcontact.html">HTML Valid!</a></li>
+
+    </ul>
+</footer>
+
+</div> <!-- END WRAPPER -->
+</body>
+</html>

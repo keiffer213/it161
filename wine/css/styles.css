@@ -1,0 +1,148 @@
+/* Styles for our wine website */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Taken from Font-squirrel */
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('../fonts/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('../fonts/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    /* background: orange; */
+    background-image: url(../images/grid-16.png);
+    background-repeat: repeat-y;
+    background-position: 220px 0;
+}
+
+header {
+    background: #ccc;
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+nav li {
+    height: 40px;
+    line-height: 40px;
+    background: maroon;
+    position: relative;
+    /* Need to have relative position for the dropdown to match and have it next to the parent li */
+}
+
+nav a {
+    color: #fff;
+    padding-left: 15px;
+    text-decoration: none;
+    display: block; /*Display block so it'll take up the whole box */
+}
+
+nav a:hover {
+    background: #500;
+}
+
+.dropdown {
+    display: none;
+    /* So that the <ul> list is hidden, and then use the display block when hovering beacuse it is the oposite of none */
+}
+
+nav li:hover .dropdown {
+    display: block;
+    position: absolute;
+    /* When calling a position aboslute you need to have a positioning, and it is relative to the parent element(li) */
+    top: 0;
+    left: 120px;
+    list-style-type: none;
+    z-index: 1; /*1 will be on top on the wrapper like layers in photoshop*/
+    width: 140px;;
+}
+
+main {
+    width: 580px;
+    float: left;
+    height: 600px;
+    background: lightblue;
+}
+
+aside {
+    width: 340px;
+    float: right;
+    height: 400px;
+    background: salmon;
+}
+
+#wrapper {
+    /* background: orange; */
+    margin: 140px 0 0 200px;
+    width: 980px;
+}
+
+#logo {
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.row {
+    background: beige;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.third {
+    width: 300px;
+    height: 300px;
+    background: pink;
+    margin-right: 20px;
+    float: left;
+    /* display: block; */
+}
+
+.third:last-of-type{
+    margin-right: 0;
+}
+
+footer {
+    height: 60px;
+    line-height: 60px;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    left: 180px;
+    background: #ccc;
+}
+
+footer li {
+    float: left;
+    margin-right: 30px;
+    list-style-type: none;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/* TYPOGRAPHY */
+
+h1 {
+    text-align: center;
+    font-size: 4em;;
+    font-family: 'alex_brushregular';
+    margin-bottom: -20px;
+    font-weight: 200; /*no need for px*/
+}

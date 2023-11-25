@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Excercise</title>
+
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    #wrapper {
+        width: 940px;
+        margin: 20px auto;
+    }
+
+    table {
+        width: 920px;
+        border: 1px solid #f00;
+        border-collapse: collapse; /*Do this so there will be only one border when you place a border for both the table & cells*/
+        margin: 0 auto;
+    }
+
+    td {
+        border: 1px solid #f00;
+        padding: 10px;
+        width: 25%;
+        vertical-align: top;
+    }
+
+    th {
+        background: yellow;
+        padding: 15px;
+        font-size: 2em;
+    }
+
+</style>
+
+</head>
+<body>
+<div id="wrapper">
+    <table>
+       <tr> <!--First Row-->
+            <th colspan="4">This is our Table Heading</th>
+            <!-- <th>2</th>
+            <th>3</th>
+            <th>4</th> -->
+        </tr>
+        <tr><!--Second Row-->
+            <!-- <td><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nisi turpis, hendrerit non vehicula eu, pharetra non nibh.</p></td> -->
+            <td><img src="images/image.jpg" alt="image"></td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr><!--Third Row-->
+             <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+    
+    
+    </table>
+
+ </div> <!-- Close div#wrapper -->
+    
+
+    
+
+</body>
+</html>

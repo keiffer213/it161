@@ -1,0 +1,100 @@
+ 
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+body {
+    background-image: url(../images/grid-16.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+ div#wrapper {
+    width: 940px;
+    margin: 0 auto;
+    
+}
+
+header {
+    height: 200px;
+    background: #8fbac4e5;
+}
+
+.logobox {
+    float: left;
+    width: 160px;
+    margin: 30px 15px 0 20px;
+
+
+    /* background: white; */
+}
+
+.logobox img {
+    width: 130px;
+    margin: 10px 5px 20px 5px;
+    /* display: block; */
+}
+
+.logobox a {
+    pointer-events:auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #FAF8F5;
+    background-color:#273F45;
+    /* Primary: #453027 */
+    border-radius: 130px / 125px;
+}
+
+.logobox h3 {
+    margin-top: -38px;
+    padding-bottom: 10px;
+}
+
+.primary{
+    float:right;
+}
+
+.primary li {
+    list-style-type: none;
+    float: left;
+    /* background: #274537; */
+    margin-top: 75px;
+}
+
+.primary a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    color: #FAF8F5;
+    padding: 5px;
+    margin-right: 30px;
+    font-size: 1.3em;
+}
+
+.primary a:hover {
+    color: #273F45;
+}
+
+.primary a:hover img {
+    background-image: url(../images/cart-inverse.png);
+}
+
+.icon {
+    width: 25px;
+}
+
+.home {
+    height: 600px;
+}
+
+
+
+
+
+
+
+ /* TYPOGRAPHY */

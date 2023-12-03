@@ -3,100 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Keiffer's Portal Page</title>
-
-<style>
-
-* { /* This clears all element formats */
-    padding:0;
-    margin:0;
-}
-
-img#keiffer { /* For personal photo */
-    width: 300px;
-    float:right;
-    margin:30px 10px 20px 10px; /* TRBL*/
-    border:rgba(0, 0, 0, 0.404) 2px solid;
-}
-
-img#pastry {
-    width: 200px;
-    float:right;
-    margin:0 10px; /* TRBL*/
-    border:rgba(0, 0, 0, 0.404) 2px solid;
-    border-radius: 50%;   
-}
-
-div#wrapper{ /* format the main section of page */
-    width:940px;
-    margin:0 auto 0 auto; /*center element*/
-    background: rgba(232, 248, 248, 0.95);
-    padding:20px 10px;
-}
-
-body { /* this is for the webpage to create a background*/
-    background: rgba(192, 231, 250, 0.445);
-    background-image: url("images/Wallpaper-Republic-HousePlants-Large-Aqua-1.jpg");
-}
-
-h1, h2, h3{ /*header formats*/
-    margin:15px 10px 15px 10px;
-}
-
-ul,li, p{ /*list & paragraph format*/
-    margin:10px 10px; /* TRBL */
-}
-
-hr { /*horizontal line format*/
-    margin: 25px 0;
-}
-
-div#valid {
-    font-size:30px;
-}
-
-</style>
+    <title>Crinkle Bakery Home Page</title>
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
 
 </head>
 
+
 <body>
-<div id="wrapper"> <!-- wrapping all the code -->
+    
+<div id="wrapper">
+    <header class="home">
+        
+    <div class="logobox">
+        <a href="index.html">
+            <img src="images/logo.png" alt="logo">
+            <h3>Crinkle</h3>
+        </a>
+        <!-- <h3>Crinkle</h3> -->
+    </div> <!--close div#logoname-->
 
-<h1> Keiffer Tan's Portal Page </h1>
-<img id="keiffer" src="images/personal_photo.jpg" alt="Personal photo of Keiffer">
-<h2> Seattle Central </h2>
-<h3> IT161 Fall 2023 </h3>
+    <nav>
+        <ul class="primary">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="pastries.html">Pastries</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><img class="icon" src="images/cart.png"></a></li>
+        </ul>
+
+    </nav>
+
+    </header>
 
 
-<p> Hello! My name is <em>keiffer Tan</em>. I was born on the island of Cebu in the Philippines. I grew up in Cebu City until I moved to Las Vegas with my family in 2005. In 2021, I moved to Seattle, and I currently work as a Pastry Cook/Baker. I am pursuing an associates degree in Software Development to pivot into a new career path.</p>
+    <div class="row">
+        <div class="third">
+            
+        </div> <!-- end div.thrird -->
 
-<h3>More about me</h3>
+        <div class="third">
 
-<p> My main loves are <strong> pastries & sweets and my beloved plants!</strong> I have worked in Baking and Pastry for over 5 years now, from a Japanese Patisserie, chocolatier, french bakery, and to a large hotel. One of my all time favorite pastries are the Kouign-Amann (Photo below, pastry from T55 in Bothel, WA) and Chocolate crinkle. I also love to travel when I am able to, and one of my favorite things is trying the local coffee and sweets of the area! </p>
+        </div> <!-- end div.thrird -->
 
-<hr>
-<img id="pastry" src="images/kouign-amann.jpg" alt="Kouign-Amann">
+        <div class="third">
 
-<h3>Homework Assignments</h3>
-<ul>
-<li><a href="class.html">Class Page</a></li>
-<li><a href="index.html">Assignment 1</a></li>
-<li><a href="ruth.html">Assignment 2</a></li>
-<li><a href="big/index.html">Assignment 3</a></li>
-<li><a href="wireframe/wireframe.html">Assignment 4</a></li>
-<li><a href="form/index.html">Assignment 5</a></li>
-<li><a href="final/yourtemplate.html">Assignment 6</a></li>
-<li><a href="test.html">Test</a></li>
-<li><a href="final/index.html">Final Project</a></li>
-</ul>
-<!-- address: https://central.mystudentswa.com/keifferta/it161/file.html -->
+        </div> <!-- end div.thrird -->
 
-<hr>
+    </div> <!-- end div.row -->
 
-<div id="valid"> <!-- create a div wrapper just for valid formatting-->
-<strong><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcentral.mystudentswa.com%2Fkeifferta%2Fit161%2Findex.html">Valid!</a></strong>
-</div>
+    <footer> <!-- Not sure if I should have tables in the footer to format the hours and the address, it seems to add some odd space at the bottom of the footer-->
 
-</div>
+        <!-- Table for Hours -->
+        <table class="hours">
+            <tr> <!-- First Row -->
+                <th colspan="2">Store Hours</th>
+            </tr>
+            <tr> <!-- Monday -->
+                <td>Monday</td>
+                <td>Closed</td>
+            </tr>
+            <tr> <!-- Tuesday -->
+                <td>Tuesday</td>
+                <td>9 AM - 7 PM</td>
+            </tr>
+            <tr> <!-- Wednesday -->
+                <td>Wednesday</td>
+                <td>9 AM - 7 PM</td>
+            </tr>
+            <tr> <!-- Thursday -->
+                <td>Thursday</td>
+                <td>9 AM - 7 PM</td>
+            </tr>
+            <tr> <!-- Friday -->
+                <td>Friday</td>
+                <td>9 AM - 7 PM</td>
+            </tr>
+            <tr> <!-- Saturday -->
+                <td>Saturday</td>
+                <td>9 AM - 7 PM</td>
+            </tr>
+            <tr> <!-- Sunday -->
+                <td>Sunday</td>
+                <td>9 AM - 7 PM</td>
+            </tr>
+
+        </table>
+
+        <!-- Table for Address -->
+        <table class="address">
+            <tr><th>Store Address</th></tr>
+            <tr><td>12345 Standard St.</td></tr>
+            <tr><td>Seattle, WA</td></tr>
+            <tr><td>98103</td></tr>
+        </table>
+
+        <ul>
+            <li>All Rights Reserved</li>
+            <li>Copyright &copy 2023</li>
+            <li><a href="../index.html">Web Design By Keiffer</a></li>
+            <li><a href="">HTML5 VALID</a></li>
+        </ul>
+
+    </footer>
+
+</div> <!--Close div#wrapper-->
 </body>
 </html>

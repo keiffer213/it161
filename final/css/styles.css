@@ -9,7 +9,7 @@
 
 body {
     background: #8fbac4e5;
-    background-image: url("../images/background.png");
+    background-image: url("../images/endless-clouds.svg");
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -17,19 +17,19 @@ div#wrapper {
     width: 940px;
     margin: 0 auto;
     
-    /* background-image: url(../images/grid-16.png); */
-    /* background-repeat: repeat-y;
-    background-position: center; */
-    background: #273F45;
+    background-image: url(../images/grid-16.png); 
+    background-repeat: repeat-y;
+    background-position: center;
+    background: #273f45cc;
 }
 
 /* HEADER CONTENTS */
 
 header {
     height: 210px;
-    background: #D5E5F2;
+    /* background: #D5E5F2; */
     /* background-image: url("../images/cookiebanner.jpg"); */
-    background: #F3EFE9;
+    background: #f3efe9;
     background-size: 100%;
     border-radius: 0 0 85px 85px;
     border: 3px solid #8fbac4;
@@ -37,7 +37,7 @@ header {
 }
 
 .homeHead {
-    height: 450px;
+    height: 550px;
     background-image: url("../images/banner.jpg");
 }
 
@@ -45,7 +45,6 @@ header {
     float: left;
     width: 160px;
     margin: 25px 15px 0 20px;
-
 
     /* background: white; */
 }
@@ -61,17 +60,17 @@ header {
     display:block;
     text-align: center;
     text-decoration: none;
-    color: #FAF8F5;
+    color: #F3EFE9;
     background-color:#273F45;
     /* Primary: #453027 */
-    border-radius: 135px / 130px;
+    border-radius: 135px;
     font-family:Arial, Helvetica, sans-serif;
 }
 
 .logobox h1 {
     margin-top: -38px;
     padding-bottom: 10px;
-    font-size: 1.25em;
+    font-size: 1.4em;
 }
 
 .social {
@@ -118,16 +117,14 @@ header {
     display: block;
     color: #41281F;
     padding: 5px;
-    margin-right: 20px;
-    font-size: 1.1em;
-    text-shadow: 1px 1px #D5E5F2;
+    margin-right: 12px;
 }
 
 #primary a:hover {
     color: #FAF8F5;
     opacity: .8;
     background: #273F45;
-    border-radius: 12px;
+    border-radius: 18px;
     text-shadow: 1px 1px black;
 }
 
@@ -142,20 +139,21 @@ header {
 /* MAIN CONTENTS */
 
 main {
-    height: 500px;
+    /* height: 750px; */
+    clear: both;
 }
 
 .row {
     /* background: rgba(128, 128, 128, 0.767); */
     /* height: 300px; */
-    padding: 20px;
+    padding-left: 15px;
     overflow: hidden;
     /* margin-bottom: 20px; */
-    /* margin-top: 40px; */
+    margin-top: 45px;
 }
 
 .third {
-    width: 285px;
+    width: 290px;
     /* height: 285px; */
     /* background: rgba(73, 99, 102, 0.801); */
     margin-right: 20px;
@@ -180,12 +178,16 @@ main {
 
 .third a {
     text-decoration: none;
-    color: white;
+    color: #FAF8F5;
 }
 
 .third:last-of-type {
     margin-right: 0;
 }
+
+/* .blueberry img {
+    border-radius: 250px;
+} */
 
 .left {
     float:left;
@@ -196,25 +198,36 @@ main {
 }
 
 .about main img {
-    /* margin: 30px 0 0 30px; */
-    margin-right: 15px;
-    width: 200px;
+    margin: -8px 15px 0 -2px;
+    width: 250px;
     border-radius: 75px;
     border: 3px solid #8fbac4;
     display: flex;
 }
 
-#owner {
-    margin: 30px 20px;
+#staff img {
+    width: 400px;
+    margin: -8px -1px 0 6px;
+}
+
+#owner, #staff, #ahours {
+    margin: 60px 20px;
     color: #F3EFE9;
 }
 
-#owner h2 {
-    margin: 5px 5px 5px 20px;
+div#ownertext, div#stafftext, div#ahours{
+    background-color: #273f45ef;
+    padding: 15px;
+    border-radius: 65px;
+    border: 1px solid #8fbac4;
 }
 
-#owner p {
-    margin: 5px 5px 5px 20px;
+.about main p, .about main h2 {
+    margin: 10px;
+} 
+
+div#ahours td, #ahours th {
+    padding: 2px 10px;
 }
 
 
@@ -233,6 +246,7 @@ footer {
     max-width: 940px;
     border: 3px solid #8fbac4;
     border-radius: 85px 85px 0 0;
+    clear: both;
 }
 
 .hours {
@@ -295,13 +309,18 @@ footer a:hover {
  /* TYPOGRAPHY */
 
 
- .third p {
+#primary a {
+    font-size: 1.3em;
+    text-shadow: 2px 2px 7px #F3EFE9;
+}
+
+.third p {
     font-size: 2.2em;
     font-weight: bold;
     text-shadow: 2px 2px 8px #000000;
 }
 
-#owner p {
-    line-height: 16px;
-    font-size: 12px;
+.about main p, .about main td {
+    line-height: 19px;
+    font-size: 0.9em;
 }

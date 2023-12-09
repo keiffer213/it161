@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crinkle Bakery Home Page</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="css/blueberry.css" type="text/css" rel="stylesheet">
+
+    <style>
+        /* If it has a class of blueberry, max width=960px */
+        .blueberry { max-width: 960px; }
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script src="js/jquery.blueberry.js"></script>
+
+    <script>
+    $(window).load(function() {
+        $('.blueberry').blueberry();
+    });
+    </script>
 
 </head>
 
@@ -43,7 +58,7 @@
 
     </header>
 
-
+    <main>
     <div class="row">
         <div class="third">
             
@@ -60,6 +75,22 @@
         </div> <!-- end div.thrird -->
 
     </div> <!-- end div.row -->
+
+    <!-- blueberry -->
+
+    <div class="blueberry">
+        <ul class="slides">
+          <li><img src="images/blue.jpg" alt="blue"/></li>
+          <li><img src="images/green.jpg" alt="green"/></li>
+          <li><img src="images/pink.jpg" alt="pink"/></li>
+          <li><img src="images/yellow.jpg" alt="yellow"/></li>
+        </ul>
+      </div>
+  
+  <!-- blueberry -->
+
+    </main>
+
 
     <footer> <!-- Not sure if I should have tables in the footer to format the hours and the address, it seems to add some odd space at the bottom of the footer-->
 

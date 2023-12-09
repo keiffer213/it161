@@ -160,40 +160,27 @@ main {
     /* background: rgba(73, 99, 102, 0.801); */
     margin-right: 20px;
     float: left;
+    position:relative;
 }
 
 .third img {
-    position:relative;
-    top: 0;
-    left: 0;
     max-width: 100%;
     border-radius: 80px;
     border: 2px solid #8fbac4;
     z-index: 1;
 }
 
-.third p#label1 {
+.third p {
     position: absolute;
-    top: 700px;
-    left: 180px;
-}
-
-.third p#label2 {
-    position: absolute;
-    top: 700px;
-    left: 490px;
-}
-
-.third p#label3 {
-    position: absolute;
-    top: 700px;
-    left: 760px;
+    top: 115px;
+    left: 75px;
+    /* top: 700px;
+    left: 180px; */
 }
 
 .third a {
     text-decoration: none;
     color: white;
-    text-shadow: 2px 2px 4px #000000;
 }
 
 .third:last-of-type {
@@ -309,8 +296,9 @@ footer a:hover {
 
 
  .third p {
-    z-index: 3;
-    font-size: 2em;
+    font-size: 2.2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px #000000;
 }
 
 #owner p {

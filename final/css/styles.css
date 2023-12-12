@@ -196,7 +196,7 @@ main {
 .third p {
     position: absolute;
     top: 115px;
-    left: 75px;
+    left: 90px;
     /* top: 700px;
     left: 180px; */
 }
@@ -222,7 +222,7 @@ main {
     float: right;
 }
 
-/* ABOUT PAGE MAIN */
+/* ABOUT PAGE */
 .about main img {
     margin: -8px 15px 0 -2px;
     width: 250px;
@@ -249,8 +249,12 @@ div#ownertext, div#stafftext, div#ahours{
 }
 
 .about main p, .about main h2 {
-    margin: 10px;
+    margin: 10px 10px 10px 20px;
 } 
+
+.about table {
+    margin-left: 10px;
+}
 
 div#ahours td, #ahours th {
     padding: 2px 10px;
@@ -270,15 +274,27 @@ div#ahours td, #ahours th {
     margin: 47px 20px 40px 0;
     border: 3px solid #8fbac4;
     border-radius: 30px;
+    background-color: #273f45ef;
+    padding: 15px;
 }
 
-.contact h3, .contact label {
+.contact label {
     margin: 7px 3px 7px 15px;
     color: #F3EFE9;
 }
 
+.contact h3:first-of-type {
+    margin: 0 3px 5px 10px;
+    color: #F3EFE9;
+}
+
+.contact h3 {
+    margin: 25px 3px 5px 10px;
+    color: #F3EFE9;
+}
+
 .contact p, .contact main a {
-    margin: 2px 3px 2px 15px;
+    margin: 2px 3px 2px 10px;
     color: #F3EFE9;
     text-decoration: none;
 }
@@ -286,17 +302,52 @@ div#ahours td, #ahours th {
 .contact legend {
     color: #F3EFE9;
     margin-left: 20px;
+    padding: 0 8px;
 }
 
 form {
     max-width: 560px;
-    margin: 30px 0 20px 20px;
+    margin: 30px 0 37px 20px;
 }
 
 fieldset {
     padding: 10px;
     border-radius: 30px;
     border: 3px solid #8fbac4;
+    background-color: #273f45ef;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 15px;
+    margin-left: 15px;
+    height: 30px;
+    width: 65%;
+    background: #F3EFE9;
+}
+
+textarea {
+    width: 95%;
+    height: 110px;
+    background: #F3EFE9;
+    margin-left: 15px;
+    margin-bottom: 22px;
+}
+
+input[type="submit"] {
+    width: auto;
+    color: #8fbac4;
+    background: #273f45ef;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.contact main p {
+    margin: 6px 9px 0 0;
 }
 
 
@@ -390,10 +441,13 @@ footer a:hover {
     font-size: 0.9em;
 }
 
-.contact aside, .contact main  {
+.contact main, .contact aside {
     font-size: 1em;
+    text-shadow: 2px 2px 5px #000000;
 }
+
 
 .contact legend {
     font-size: 2em;
+    text-shadow: 4px 4px 7px #000000;
 }

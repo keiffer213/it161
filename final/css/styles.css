@@ -269,7 +269,7 @@ div#ahours td, #ahours th {
     width: 580px;
 }
 
-.contact aside, .contact-thx aside {
+.contact aside, .contactthx aside {
     width: 320px;
     margin: 47px 20px 40px 0;
     border: 3px solid #8fbac4;
@@ -278,7 +278,7 @@ div#ahours td, #ahours th {
     padding: 15px;
 }
 
-.contact-thx aside {
+.contactthx aside {
     margin: 47px 20px 47px 0;
 }
 
@@ -287,17 +287,17 @@ div#ahours td, #ahours th {
     color: #F3EFE9;
 }
 
-.contact h3:first-of-type, .contact-thx h3:first-of-type {
+.contact h3:first-of-type, .contactthx h3:first-of-type {
     margin: 0 3px 5px 10px;
     color: #F3EFE9;
 }
 
-.contact h3, .contact-thx h3 {
+.contact h3, .contactthx h3 {
     margin: 25px 3px 5px 10px;
     color: #F3EFE9;
 }
 
-.contact p, .contact main a, .contact-thx p {
+.contact p, .contact main a, .contactthx p {
     margin: 2px 3px 2px 10px;
     color: #F3EFE9;
     text-decoration: none;
@@ -355,7 +355,7 @@ input[type="submit"] {
     margin: 6px 9px 0 0;
 }
 
-.contact-thx main {
+.contactthx main {
     height: 100px;
     color: #F3EFE9;
     text-align: center;
@@ -366,7 +366,7 @@ input[type="submit"] {
     border-radius: 30px;
 }
 
-.contact-thx h2 {
+.contactthx h2 {
     margin: 10px 0;
 }
 
@@ -461,7 +461,7 @@ footer a:hover {
     font-size: 0.9em;
 }
 
-.contact main, .contact aside, .contact-thx aside {
+.contact main, .contact aside, .contactthx aside {
     font-size: 1em;
     text-shadow: 2px 2px 5px #000000;
 }

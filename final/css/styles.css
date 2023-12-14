@@ -38,7 +38,7 @@ div#wrapper {
     background-image: url(../images/grid-16.png); 
     background-repeat: repeat-y;
     background-position: center;
-    /* background: #273f45cc; */
+    background: #273f45cc;
 }
 
 /* HEADER CONTENTS */
@@ -287,24 +287,26 @@ div#ahours td, #ahours th {
 }
 
 .about .row {
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 120px;
+    /* margin-bottom: 20px; */
     margin-top: 45px;
     clear:both;
 }
 
 .about .fourth {
-    width: 210px;
+    width: 160px;
     margin-right: 20px;
     float: left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
+
 
 .about .fourth:last-of-type {
     margin-right: 0;
 }
 
 .about .fourth img {
+    width: 100%;
     margin-bottom: 5px;
 }
 
@@ -456,28 +458,45 @@ input:hover[type="submit"] {
     text-shadow: 2px 2px 5px #000000;
 }
 
-.pastries h2 {
-     background-color: #273f45ef;
-     border-radius: 30px;
-     border: 3px solid #8fbac4;
+.pastries hr {
+    margin-left: 220px;
+    width: 500px;
+    border: 2px solid #8fbac4;
+}
+
+.pastries .hr2 {
+    margin-left: 320px;
+    width: 300px;
+    border: 1px solid #8fbac4;
+}
+
+.pastries h2, .pastries h3 {
      margin: 20px;
-     padding: 20px;
-     width: auto;
-     font-size: 2em;
+     text-align: center;
+     font-size: 3em;
+}
+
+.pastries h3 {
+    font-size: 2em;
+}
+
+.row4 h3, .row3 h3 {
+    margin: 0;
+    font-size: 1em;
 }
 
 .pastries .row3 {
-    margin-left: 60px;
+    margin-left: 210px;
     /* margin-bottom: 20px; */
     margin-top: 45px;
     /* clear:both; */
 }
 
 .pastries .third {
-    width: 200px;
+    width: 160px;
     margin-right: 22px;
     float: left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .pastries .third:last-of-type {
@@ -489,20 +508,15 @@ input:hover[type="submit"] {
     margin-bottom: 5px;
 }
 
-.pastries .third h3 {
-    /* margin-bottom: 30px; */
-    text-align: center;
-}
-
 .pastries .row4 {
-    margin-left: 20px;
+    margin-left: 120px;
     margin-bottom: 20px;
     margin-top: 45px;
     clear:both;
 }
 
 .pastries .fourth {
-    width: 200px;
+    width: 160px;
     margin-right: 20px;
     float: left;
     margin-bottom: 30px;
@@ -515,11 +529,6 @@ input:hover[type="submit"] {
 .pastries .fourth img {
     width: 100%;
     margin-bottom: 5px;
-}
-
-.pastries .fourth h3 {
-    /* margin-bottom: 30px; */
-    text-align: center;
 }
 
 /* -----------------------------------------------  */

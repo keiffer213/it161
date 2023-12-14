@@ -38,7 +38,7 @@ div#wrapper {
     background-image: url(../images/grid-16.png); 
     background-repeat: repeat-y;
     background-position: center;
-    background: #273f45cc;
+    /* background: #273f45cc; */
 }
 
 /* HEADER CONTENTS */
@@ -104,8 +104,8 @@ header {
     list-style-type: none;
     margin-bottom: 5px;
     padding: 0 5px;
-    background: #273f45cc;
-    border-radius: 30px
+    background: #f3efe9ee;
+    border-radius: 30px;
 }
 
 .icon {
@@ -165,11 +165,6 @@ main {
     clear: both;
 }
 
-/* TEMPORARY HEIGHTS */
-.pastries main, .order main, .cart main {
-    height: 750px;
-}
-
 /* FOR INDEX.HTML PAGE */
 .home .row {
     /* background: rgba(128, 128, 128, 0.767); */
@@ -189,11 +184,10 @@ main {
     position:relative;
 }
 
-.third img {
+.third img, .fourth img {
     max-width: 100%;
     border-radius: 80px;
     border: 2px solid #8fbac4;
-    z-index: 1;
 }
 
 .home .third p {
@@ -311,7 +305,6 @@ div#ahours td, #ahours th {
 }
 
 .about .fourth img {
-    width: 100%;
     margin-bottom: 5px;
 }
 
@@ -333,7 +326,11 @@ div#ahours td, #ahours th {
     border-radius: 65px;
     border: 1px solid #8fbac4;
     margin-right: 65px;
+}
 
+.about main a:hover {
+    color: #273f45ef;
+    background-color: #F3EFE9;
 }
 
 /* CONTACT & THX PAGE */
@@ -421,6 +418,15 @@ input[type="submit"] {
     background: #273f45ef;
     border-radius: 10px;
     padding: 5px;
+    border: 1px solid #8fbac4;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+input:hover[type="submit"] {
+    color: #273f45ef;
+    background: #8fbac4;
+    border: 1px solid #273f45ef;
+    text-shadow: 1px 1px 5px #000000;
 }
 
 .contact main p {
@@ -440,6 +446,114 @@ input[type="submit"] {
 
 .contactthx h2 {
     margin: 10px 0;
+}
+
+/* -----------------------------------------------  */
+/* Pastries Content */
+
+.pastries main {
+    color: #F3EFE9;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.pastries h2 {
+     background-color: #273f45ef;
+     border-radius: 30px;
+     border: 3px solid #8fbac4;
+     margin: 20px;
+     padding: 20px;
+     width: auto;
+     font-size: 2em;
+}
+
+.pastries .row3 {
+    margin-left: 60px;
+    /* margin-bottom: 20px; */
+    margin-top: 45px;
+    /* clear:both; */
+}
+
+.pastries .third {
+    width: 200px;
+    margin-right: 22px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.pastries .third:last-of-type {
+    margin-right: 0;
+}
+
+.pastries .third img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.pastries .third h3 {
+    /* margin-bottom: 30px; */
+    text-align: center;
+}
+
+.pastries .row4 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 45px;
+    clear:both;
+}
+
+.pastries .fourth {
+    width: 200px;
+    margin-right: 20px;
+    float: left;
+    margin-bottom: 30px;
+}
+
+.pastries .fourth:last-of-type {
+    margin-right: 0;
+}
+
+.pastries .fourth img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.pastries .fourth h3 {
+    /* margin-bottom: 30px; */
+    text-align: center;
+}
+
+/* -----------------------------------------------  */
+/* Order Online Page & Cart Content */
+
+.order main, .cart main{
+    width: auto;
+    background-color: #273f45ef;
+    padding: 35px;
+    border-radius: 65px;
+    border: 3px solid #8fbac4;
+    margin: 60px 40px;
+    color: #F3EFE9;
+}
+
+.order main p, .order main h2, .cart main p, .cart main h2 {
+    margin: 6px;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+.order main h2, .cart main h2 {
+    font-size: 2em;
+}
+
+.order main a, .cart main a {
+    text-decoration: none;
+    color:#8fbac4;
+}
+
+.order main a:hover, .cart main a:hover {
+    color: black;
+    background: #F3EFE9;
+    border-radius: 10px;
+
 }
 
 

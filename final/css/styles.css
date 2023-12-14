@@ -470,6 +470,11 @@ input:hover[type="submit"] {
     border: 1px solid #8fbac4;
 }
 
+.pastries .hrhidden {
+    margin-bottom: 40px;
+    border: 1px hidden #8fbac4;
+}
+
 .pastries h2, .pastries h3 {
      margin: 20px;
      text-align: center;
@@ -483,6 +488,7 @@ input:hover[type="submit"] {
 .row4 h3, .row3 h3 {
     margin: 0;
     font-size: 1em;
+    font-weight: 500;
 }
 
 .pastries .row3 {
@@ -503,7 +509,7 @@ input:hover[type="submit"] {
     margin-right: 0;
 }
 
-.pastries .third img {
+.pastries .main img {
     width: 100%;
     margin-bottom: 5px;
 }
@@ -524,11 +530,6 @@ input:hover[type="submit"] {
 
 .pastries .fourth:last-of-type {
     margin-right: 0;
-}
-
-.pastries .fourth img {
-    width: 100%;
-    margin-bottom: 5px;
 }
 
 /* -----------------------------------------------  */
